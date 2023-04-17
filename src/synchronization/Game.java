@@ -34,11 +34,7 @@ public class Game extends Canvas implements Runnable
     private Thread thread;
     
     /* Animation-related attributes. */
-    private boolean startCounting = false;
     private int score = 0;
-    private int counter = 0;
-    private int stateCounter = 0;
-    private int direction = 0;
     
     // Default constructor.
     public Game()
@@ -46,7 +42,7 @@ public class Game extends Canvas implements Runnable
         try
         {
             // Initialize display.
-            display = new Display(width, height, "Synchronization Tutorial");
+            display = new Display(this.width, height, "Synchronization Tutorial");
             display.open(this); 
             
             // Initialize game handler.
@@ -104,6 +100,10 @@ public class Game extends Canvas implements Runnable
     /**
      * 
      * Public methods.
+     * @param var
+     * @param min
+     * @param max
+     * @return 
      */
     
     // Clamp, so player won't get offset the display bound.
@@ -156,17 +156,8 @@ public class Game extends Canvas implements Runnable
     
     // check if collision player and the obstacle
     public boolean collision(GameObject player, GameObject feed){
-            System.out.print(player.getX() + " ");
-            System.out.print(feed.getX()+ " ");
-            System.out.print(player.getX() + player.getWidth() + " ");
-            System.out.println(feed.getX() + feed.getWidth());
-        if(player.getX() <= feed.getX() && (player.getX() + player.getWidth() >= feed.getX() + feed.getWidth()) 
-                && player.getY() <= feed.getY() && player.getY() + player.getHeight() >= feed.getY() + feed.getHeight()
-           ){
-            return true;
-        }else{
-            return false;
-        }
+        return player.getX() <= feed.getX() && (player.getX() + player.getWidth() >= feed.getX() + feed.getWidth()) 
+                && player.getY() <= feed.getY() && player.getY() + player.getHeight() >= feed.getY() + feed.getHeight();
     }
     
     // Initialize game when it run for the first time.
