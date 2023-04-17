@@ -26,7 +26,7 @@ Desain yang saya buat menggunakan 8 Class dan 1 interface:
 * GameInterface
 
 ## Design Class Diagram
-![image](https://user-images.githubusercontent.com/92314386/232541483-a9b53f43-2440-4862-a097-f59a72a3d260.png)
+![image](https://user-images.githubusercontent.com/92314386/232543845-e191773c-b13a-4eb5-9c63-cfcb01386b14.png)
 
 ## Alur Game
 
