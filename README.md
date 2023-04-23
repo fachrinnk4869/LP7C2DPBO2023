@@ -34,7 +34,7 @@ Desain yang saya buat menggunakan 8 Class dan 1 interface:
 
 - ketika key dipencet skor bertambah
 
-- gerakkan sampai mengenai buletan ungu maka buletan ungu akan bergerak random
+- gerakkan sampai mengenai buletan ungu maka buletan ungu akan bergerak random dan skor bertambah 5
 
 ## Dokumentasi
 **Game Snake Makan Doang gak tumbuh tumbuh**
