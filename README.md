@@ -39,4 +39,5 @@ Desain yang saya buat menggunakan 8 Class dan 1 interface:
 ## Dokumentasi
 **Game Snake Makan Doang gak tumbuh tumbuh**
 
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/92314386/233256158-f743df00-d297-42bd-a843-eb8912e6f314.gif)
+![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/92314386/233855984-104542be-3194-478d-9cca-6caaf3028973.gif)
+
