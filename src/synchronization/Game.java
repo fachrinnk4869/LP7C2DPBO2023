@@ -236,6 +236,7 @@ public class Game extends Canvas implements Runnable
             GameObject feed = handler.get(j);
             // main app
             if(this.collision(player, feed)){
+                this.score += 5;
                 feed.randomCoord(width, height);
             }
         {   
